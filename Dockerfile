@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package.json package-lock.json /app/
 RUN npm install
 COPY . /app
-CMD node server.js
+CMD npm run start
 
 EXPOSE 8080
 
